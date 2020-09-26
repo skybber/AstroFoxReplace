@@ -1,0 +1,95 @@
+{
+  "version": "2.1",
+  "groups": [
+    {
+      "name": "Minkowski",
+      "urls": [],
+      "substitutions": [
+        {
+          "input": "(Minkowski)_?(\\s*)(\\d+-\\d+)",
+          "inputType": "regexp",
+          "output": "M$3",
+          "caseSensitive": false
+        }
+      ],
+      "html": "none",
+      "enabled": true,
+      "mode": "manual"
+    },
+    {
+      "name": "Kohoutek",
+      "urls": [],
+      "substitutions": [
+        {
+          "input": "(Kohoutek)_?(\\s*)(\\d+-\\d+)",
+          "inputType": "regexp",
+          "output": "K$3",
+          "caseSensitive": false
+        }
+      ],
+      "html": "none",
+      "enabled": true,
+      "mode": "manual"
+    },
+    {
+      "name": "Sharpless",
+      "urls": [],
+      "substitutions": [
+        {
+          "input": "(Sharpless)_?(\\s*)(\\d+-\\d+)",
+          "inputType": "regexp",
+          "output": "Sh$3",
+          "caseSensitive": false
+        }
+      ],
+      "html": "none",
+      "enabled": true,
+      "mode": "manual"
+    },
+    {
+      "name": "Sanduleak",
+      "urls": [],
+      "substitutions": [
+        {
+          "input": "(Sanduleak)_?(\\s*)(\\d+-\\d+)",
+          "inputType": "regexp",
+          "output": "Sa$3",
+          "caseSensitive": false
+        }
+      ],
+      "html": "none",
+      "enabled": true,
+      "mode": "manual"
+    },
+    {
+      "name": "Vyssotsky",
+      "urls": [],
+      "substitutions": [
+        {
+          "input": "(Vyssotsky)_?(\\s*)(\\d+-\\d+)",
+          "inputType": "regexp",
+          "output": "Vy$3",
+          "caseSensitive": false
+        }
+      ],
+      "html": "none",
+      "enabled": true,
+      "mode": "manual"
+    },
+    {
+      "name": "NGC",
+      "urls": [],
+      "substitutions": [
+        {
+          "input": "(M|NGC|IC|Sh|Abell|K|Hen|Sa|PB|Kn|Vy)_?(\\s*)(\\d+(-\\d+)?)",
+          "inputType": "regexp",
+          "output": "<a href=\"https://www.czsky.cz/deepskyobject/search?q=$1$3\">$1$2$3</a>",
+          "caseSensitive": false
+        }
+      ],
+      "html": "output",
+      "enabled": true,
+      "mode": "manual"
+    }
+  ]
+}
