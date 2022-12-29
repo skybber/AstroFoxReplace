@@ -83,7 +83,7 @@
         {
           "input": "(M|NGC|IC|Sh|Abell|K|Hen|Sa|PB|Kn|Vy|UGC|STF)_?(\\s*)(\\d+(-\\d+)?)",
           "inputType": "regexp",
-          "output": "<a href=\"https://www.czsky.cz/deepskyobject/search?q=$1$3\">$1$2$3</a>",
+          "output": "<a href=\"https://www.czsky.eu/deepskyobject/search?q=$1$3\">$1$2$3</a>",
           "caseSensitive": false
         }
       ],
